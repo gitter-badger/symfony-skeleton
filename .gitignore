@@ -1,18 +1,19 @@
-# Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
-
 # Email spool folder
 /app/spool/*
 
 # Cache, session files and logs (Symfony3)
+/app/config/parameters.yml
+/build/
+/phpunit.xml
+/var/*
+!/var/cache
 /var/cache/*
-/var/logs/*
-/var/sessions/*
 !var/cache/.gitkeep
+!/var/logs
+/var/logs/*
 !var/logs/.gitkeep
+!/var/sessions
+/var/sessions/*
 !var/sessions/.gitkeep
 
 # Parameters
@@ -25,6 +26,7 @@
 /bin/*
 !bin/console
 !bin/symfony_requirements
+!var/SymfonyRequirements.php
 /vendor/
 
 # Assets and user uploads
@@ -34,15 +36,10 @@
 # Assets managed by Bower
 /web/assets/vendor/
 
-# PHPUnit
-/app/phpunit.xml
-/phpunit.xml
-
 # Build data
 /build/
 
-# Composer PHAR
-/composer.phar
-
 # Backup entities generated with doctrine:generate:entities command
 */Entity/*~
+
+composer.lock
