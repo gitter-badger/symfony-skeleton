@@ -1,0 +1,21 @@
+{
+  "name": "symfony-skeleton",
+  "version": "1.0.0",
+  "description": "Symfony standar with basics bundles configured",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.10",
+    "materialize-css": "^0.97.7",
+    "jquery": "^2.1.0"
+  }
+}
