@@ -7,3 +7,46 @@ Author URI: http://www.miguelangelmartin.me
 */
 
 @import "../../../../node_modules/materialize-css/sass/materialize.scss";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  h1, h2, h3, h4{
+    font-weight: 900;
+    color: #000;
+  }
+  header{
+    nav{
+      background-color: #3ECF8E;
+    }
+  }
+  .index-banner{
+    h1{
+      font-size: 39px;
+      line-height: 50px;
+      font-weight: 100;
+      strong{
+        font-weight: 900;
+      }
+    }
+    a{
+      background-color: #3ECF8E;
+      &:hover{
+          background-color: #6ED69A;
+      }
+    }
+  }
+  footer{
+    color: #fff;
+  }
+  .page-footer{
+    background-color: #3ECF8E;
+  }
+  .footer-copyright{
+      background-color: #3ECF8E;
+      a{
+        color: #fff;
+      }
+  }
+}
