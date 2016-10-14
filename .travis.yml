@@ -10,7 +10,6 @@ services:
 before_script:
   - mysql -e 'create database symfony;'
   - composer install
-  - php app/console doctrine:database:create
   - php app/console doctrine:schema:create
 
 script: phpunit --coverage-text
