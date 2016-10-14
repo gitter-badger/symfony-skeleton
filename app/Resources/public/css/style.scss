@@ -18,22 +18,35 @@ body{
   }
   header{
     nav{
+      position: fixed;
       background-color: #3ECF8E;
     }
   }
-  .index-banner{
-    h1{
-      font-size: 39px;
-      line-height: 50px;
-      font-weight: 100;
-      strong{
-        font-weight: 900;
+  #main{
+    flex: 1;
+    height:100vh;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../images/white-desktop.jpg');
+    //transform: translateZ(-1px);
+
+    .index-banner{
+      //transform: translateZ(-1px);
+
+      h1{
+        font-size: 39px;
+        line-height: 50px;
+        font-weight: 100;
+        margin-top: 20%;
+        strong{
+          font-weight: 900;
+        }
       }
-    }
-    a{
-      background-color: #3ECF8E;
-      &:hover{
-          background-color: #6ED69A;
+      a{
+        background-color: #3ECF8E;
+        &:hover{
+            background-color: #6ED69A;
+        }
       }
     }
   }
