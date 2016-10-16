@@ -3,6 +3,7 @@
 namespace ApiBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiBundle\Entity\Traits\Timestampable;
 use FOS\UserBundle\Model\User as BaseUser;
 
 /**
@@ -13,6 +14,8 @@ use FOS\UserBundle\Model\User as BaseUser;
  */
 class User extends BaseUser
 {
+    use Timestampable;
+
     /**
      * @var int
      *
