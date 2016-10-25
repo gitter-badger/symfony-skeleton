@@ -65,6 +65,9 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: ApiBundle\Entity\User
+    registration:
+        form:
+            type: AppBundle\Form\RegistrationType
 
 # Swiftmailer Configuration
 swiftmailer:
