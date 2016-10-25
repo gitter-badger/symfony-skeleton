@@ -60,7 +60,8 @@ trait Timestampable
     }
 
     /**
-     * Método que se ejecutará cuando se actualiza el objeto (hay que mapear el evento)
+     * @ORM\PreUpdate
+     * @ORM\PrePersist
      */
     public function doOnPreUpdate()
     {
@@ -68,7 +69,7 @@ trait Timestampable
     }
 
     /**
-     * Método que se ejecutará cuando se crea el objeto (hay que mapear el evento)
+     * @ORM\PrePersist
      */
     public function doOnPrePersist()
     {
