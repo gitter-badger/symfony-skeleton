@@ -41,7 +41,7 @@ class LandingControllerTest extends WebTestCase
         $client->request('GET', '/');
         if ($profiler = $client->getProfile()) {
             $this->assertLessThan(
-                500,
+                1000,
                 $profiler->getCollector('time')->getDuration()
             );
         }
