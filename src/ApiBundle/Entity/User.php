@@ -33,6 +33,10 @@ class User extends BaseUser
      */
     private $name;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Privilege", mappedBy="user")
+     */
+    private $privileges;
 
     /**
      * Get id
@@ -66,5 +70,39 @@ class User extends BaseUser
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Add privilege
+     *
+     * @param \ApiBundle\Entity\Privilege $privilege
+     *
+     * @return User
+     */
+    public function addPrivilege(\ApiBundle\Entity\Privilege $privilege)
+    {
+        $this->privileges[] = $privilege;
+
+        return $this;
+    }
+
+    /**
+     * Remove privilege
+     *
+     * @param \ApiBundle\Entity\Privilege $privilege
+     */
+    public function removePrivilege(\ApiBundle\Entity\Privilege $privilege)
+    {
+        $this->privileges->removeElement($privilege);
+    }
+
+    /**
+     * Get privileges
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getPrivileges()
+    {
+        return $this->privileges;
     }
 }

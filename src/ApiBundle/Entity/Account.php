@@ -32,4 +32,3 @@ class Account
         return $this->id;
     }
 }
-

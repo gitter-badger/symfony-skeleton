@@ -5,21 +5,25 @@ namespace ApiBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 
-class ApiController extends Controller
+class ApiController extends BaseController
 {
     /**
      * @Route("/api")
      */
     public function indexAction()
     {
-        return new JsonResponse(array('version' => '1.0', 'status' => 'Working'), 200);
+        $view = $this->view(['version' => '1.0', 'status' => 'Working'], Response::HTTP_OK);
+        return $this->handleView($view);
     }
+
     /**
      * @Route("/api/version")
      */
     public function versionAction()
     {
-        return new JsonResponse(array('version' => '1.0'), 200);
+        $view = $this->view(['version' => '1.0'], Response::HTTP_OK);
+        return $this->handleView($view);
     }
 }
