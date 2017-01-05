@@ -32,18 +32,4 @@ class LandingControllerTest extends WebTestCase
             array('/register//'),
         ];
     }
-
-    /** @test */
-    public function timeToLoadHomepage()
-    {
-        $client = static::createClient();
-        $client->enableProfiler();
-        $client->request('GET', '/');
-        if ($profiler = $client->getProfile()) {
-            $this->assertLessThan(
-                1000,
-                $profiler->getCollector('time')->getDuration()
-            );
-        }
-    }
 }
