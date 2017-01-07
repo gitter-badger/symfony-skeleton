@@ -6,4 +6,4 @@ Symfony standar with basics bundles configured
 License
 -------
 
-This bundle is released under the [MIT license](LICENSE).
+This project is released under the [MIT license](LICENSE).
