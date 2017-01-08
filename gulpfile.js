@@ -91,8 +91,8 @@ gulp.task('watch', function () {
  * All the task to execute with the command gulp
  */
 gulp.task('default', [
-	'styles', 
-	'scripts', 
+	'styles',
+	'scripts',
 	'fonts',
-    'images'
+  'images'
 ]);
