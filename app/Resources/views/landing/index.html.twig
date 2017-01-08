@@ -2,34 +2,43 @@
 
 {% block body %}
 
-    {% include ':landing:includes/header.html.twig' %}
+    <header>
+        <nav>
+            <div class="nav-wrapper container">
+                <a class="logo" href="{{ path('homepage') }}">
+                  <strong>Symfony Skeleton</strong>
+                </a>
 
-    <section id="main">
-      <div class="index-banner">
-          <div class="section no-pad-bot">
-              <div class="container">
+                {% include ':landing:includes/menu.html.twig' %}
+            </div>
+        </nav>
 
-                  <h1 class="header center"><strong>Symfony Skeleton</strong> is the simplest way to use Symfony framework with the basics bundles installed</h1>
-                  <div class="row center">
-                      <a href="https://github.com/cromattica/symfony-skeleton" id="download-button"
-                         class="btn-large">Get Started</a>
-                  </div>
+        <section id="banner">
+            <div class="index-banner">
+                <div class="section no-pad-bot">
+                    <div class="container">
 
-              </div>
-          </div>
-      </div>
-    </section>
+                        <h1 class="header center"><strong>Symfony Skeleton</strong> is the simplest way to use Symfony framework with the basics bundles installed</h1>
+                        <div class="row center">
+                            <a href="https://github.com/cromattica/symfony-skeleton" id="download-button"
+                               class="btn-large">Get Started</a>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 
     <section id="features">
       <div class="container">
         <h2>Features</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          <a href="{{ path('admin') }}">Access Administration</a>
-        </p>
+        <p>Symfony Skeleton is the simplest way to use Symfony framework with the basics bundles installed.</p>
+        <p>Every project has similar parts that you have to develop every time. We provide the basic bundles configured and ready to use.</p>
+        <ul>
+          <li><a href="{{ path('admin') }}">Access Administration</a></li>
+          <li><a href="{{ path('fos_user_registration_register') }}">Register user</a></li>
+        </ul>
       </div>
     </section>
 
@@ -37,9 +46,7 @@
     <section id="documentation">
       <div class="container">
         <h2>Documentation</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <p></p>
       </div>
     </section>
 

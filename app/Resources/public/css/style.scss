@@ -16,43 +16,48 @@ body{
     font-weight: 900;
     color: #000;
   }
+
   header{
+    background-color: #3ECF8E;
+    background-image: url(../images/sf_background.png);
     nav{
-      position: fixed;
-      background-color: rgba(0,0,0,0);
       box-shadow: none;
+      background-color: rgba(0,0,0,0);
+      &.subpage{
+          background-color: #3ECF8E;
+      }
       a:hover{
           background-color: rgba(0,0,0,0);
           color: #333;
       }
     }
-  }
-  #main{
-    background-position: center center;
-    background-color: #3ECF8E;
-    background-image: url(../images/sf_background.png);
 
-    .index-banner{
+    #banner{
 
-      h1{
-        font-size: 39px;
-        line-height: 50px;
-        font-weight: 100;
-        margin-top: 20%;
-        color: #FFFFFF;
-        strong{
-          font-weight: 900;
+      .index-banner{
+
+        h1{
+          font-size: 39px;
+          line-height: 50px;
+          font-weight: 100;
+          margin-top: 20%;
+          color: #FFFFFF;
+          strong{
+            font-weight: 900;
+          }
         }
-      }
-      a{
-        background-color: #3DB884;
-        margin-bottom: 20%;
-        &:hover{
-            background-color: #3FC48C;
+        a{
+          background-color: #3DB884;
+          margin-bottom: 20%;
+          &:hover{
+              background-color: #3FC48C;
+          }
         }
       }
     }
   }
+
+
   #login{
     padding-top: 150px;
     min-height: 500px;

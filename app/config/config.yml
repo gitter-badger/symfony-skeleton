@@ -67,6 +67,7 @@ fos_user:
     registration:
         form:
             type: AppBundle\Form\RegistrationType
+            validation_groups: [AppRegistration]
 
 # Fosrest Configuration
 fos_rest:
