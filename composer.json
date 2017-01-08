@@ -1,5 +1,5 @@
 {
-    "name": "miguel/skeleton",
+    "name": "cromattica/symfony-skeleton",
     "license": "MIT",
     "type": "project",
     "autoload": {
